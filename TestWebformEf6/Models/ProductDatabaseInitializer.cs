@@ -8,8 +8,7 @@ namespace TestWebformEf6
         protected override void Seed(ProductContext context)
         {
             GetCategories().ForEach(c => context.Categories.Add(c));
-           // getproducts().foreach(p => context.products.add(p));
-            //context.SaveChanges();// I added this line not found in tutorial
+           
         }
 
         public static List<Category> GetCategories()
